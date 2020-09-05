@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(65, 65, 65);
 }
 .col_one {
   margin-top: 50px;
@@ -17,31 +18,31 @@ body {
   align-items: center;
 }
 .col_two > img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   margin-left: 10px;
 }
 .col_two > span {
   display: inline-block;
-  width: 80px;
-  height: 50px;
+  width: 90px;
+  height: 55px;
   text-align: center;
-  line-height: 50px;
-  font-size: 30px;
+  line-height: 54px;
+  font-size: 33px;
   margin-left: 10px;
 }
 .blue {
-  background-color: blue;
-  color: white;
+  background-color: rgb(83, 83, 255);
+  color: rgb(65, 65, 65);
 }
 
 .yellow {
-  background-color: yellow;
-  color: white;
+  background-color: rgb(226, 226, 134);
+  color: rgb(65, 65, 65);
 }
 .pink {
-  background-color: palevioletred;
-  color: white;
+  background-color: rgb(194, 116, 142);
+  color: rgb(65, 65, 65);
 }
 .effect:hover {
   transform: scale(1.2);
@@ -59,13 +60,15 @@ body {
   justify-content: center;
 }
 .list > li > div {
-  width: 40%;
+  width: 50%;
+  background-color: rgb(216, 216, 216);
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
+  color: rgba(0, 0, 0, 0.582);
 }
 .list > li > div > img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
