@@ -1,5 +1,10 @@
 const storeBtn = document.getElementById("JS_store");
 const oneBtn = document.getElementById("JS_shirts");
+const express = require("express");
+const app = express();
+
+app.listen(4000);
+
 const twoBtn = document.getElementById("JS_pants");
 const thrBtn = document.getElementById("JS_skirt");
 const fourBtn = document.getElementById("JS_blue");
