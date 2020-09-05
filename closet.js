@@ -1,7 +1,6 @@
 const storeBtn = document.getElementById("JS_store");
 const oneBtn = document.getElementById("JS_shirts");
 const express = require("express");
-const app = express();
 
 app.listen(4000);
 
