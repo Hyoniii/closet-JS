@@ -7,14 +7,29 @@ const fiveBtn = document.getElementById("JS_yellow");
 const sixBtn = document.getElementById("JS_pink");
 const listBox = document.getElementById("JS_list");
 
+const ul = document.getElementById("JS_list");
+
+//Fetch the items from the JSON file
 function loadItems() {
   return fetch("data/data.json")
     .then((res) => res.json())
-    .then((json) => console.log(json));
+    .then((json) => json.items);
+}
+
+function displayItems(items) {
+  const li = document.createElement("li");
+
+  const div = items.map(
+    (item) => `<div><img src=${item.image}>${item.gender},${item.size}</div>`
+  );
+  //console.log(div);
+  //ul.append(li);
 }
 
 loadItems()
-  .then((items) => {})
+  .then((items) => {
+    displayItems(items);
+  })
   .catch(console.log);
 
 //function init() {
