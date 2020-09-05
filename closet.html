@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="closet.css" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <link rel="stylesheet" href="closet.css?ver=1" />
     <title>Closet</title>
   </head>
   <body>
@@ -10,16 +11,44 @@
       <img id="JS_store" class="store effect" src="./imgs/logo.png" />
     </div>
     <div class="col_two">
-      <img id="JS_shirts" class="effect" src="./imgs/blue_t.png" />
-      <img id="JS_pants" class="effect" src="./imgs/blue_p.png" />
-      <img id="JS_skirt" class="effect" src="./imgs/blue_s.png" />
-      <span id="JS_blue" class="blue effect">blue</span>
-      <span id="JS_yellow" class="yellow effect">yellow</span>
-      <span id="JS_pink" class="pink effect">pink</span>
+      <img
+        id="JS_shirts"
+        class="effect"
+        src="./imgs/blue_t.png"
+        data-type="type"
+        data-value="tshirts"
+      />
+      <img
+        id="JS_pants"
+        class="effect"
+        src="./imgs/blue_p.png"
+        data-type="type"
+        data-value="pants"
+      />
+      <img
+        id="JS_skirt"
+        class="effect"
+        src="./imgs/blue_s.png"
+        data-type="type"
+        data-value="skirt"
+      />
+      <span id="JS_blue" class="blue effect" data-type="color" data-value="blue"
+        >blue</span
+      >
+      <span
+        id="JS_yellow"
+        class="yellow effect"
+        data-type="color"
+        data-value="yellow"
+        >yellow</span
+      >
+      <span id="JS_pink" class="pink effect" data-type="color" data-value="pink"
+        >pink</span
+      >
     </div>
-    <div id="JS_listBox">
-      <ul id="JS_list"></ul>
+    <div id="JS_listBox" class="listBox">
+      <ul id="JS_list" class="list"></ul>
     </div>
-    <script src="./closet.js"></script>
+    <script src="./closet.js?ver=2"></script>
   </body>
 </html>
